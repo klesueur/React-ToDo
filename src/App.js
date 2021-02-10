@@ -4,7 +4,8 @@ import Form from './Components/Form';
 import List from './Components/List';
 
 function App() {
-  
+  const [input, setInput] = useState([]);
+  const [list, setList] = useState([]);
 
   return (
     <div className="App">

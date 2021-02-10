@@ -1,12 +1,15 @@
 import React from 'react';
 
 
-const Form = () => {
+const Form = (props) => {
 
+        const handleOnChange = (e) => {
+            console.log(e.target.value)
+        }
 
     return(
         <div>
-            <input type="text"/>
+            <input type="text" />
             <button>Add</button>
         </div>
     )
