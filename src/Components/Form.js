@@ -10,18 +10,19 @@ const Form = (props) => {
 
         const handleSubmit = (e) => {
             e.preventDefault();
-            props.setInputText([
-                ...todoList, {
+            props.setTodoList([
+                ...props.todoList, {
                     text: props.inputText,
                     completed: false,
-                    id: 
+                    id: Math.random() * 1000
                     }
                 ]);
+            props.setInputText('');
         }
 
     return(
         <div>
-            <input type="text" onChange={handleOnChange} />
+            <input value={props.inputText} type="text" onChange={handleOnChange} />
             <button type="submit" onClick={handleSubmit}>Add</button>
         </div>
     )
