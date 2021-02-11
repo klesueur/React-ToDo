@@ -4,13 +4,13 @@ import Form from './Components/Form';
 import List from './Components/List';
 
 function App() {
-  const [input, setInput] = useState([]);
+  const [input, setInput] = useState('');
   const [list, setList] = useState([]);
 
   return (
     <div className="App">
       <h1>Kara's ToDo List</h1>
-      <Form />
+      <Form setInputText={setInput} />
       <List />
     </div>
   );
