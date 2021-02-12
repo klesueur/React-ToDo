@@ -19,6 +19,7 @@ function App() {
       />
       <List
         inputText={input}
+        todoList={list}
       />
     </div>
   );

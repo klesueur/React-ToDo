@@ -6,7 +6,9 @@ const List = (props) => {
 
     return(
         <div>
-            {props.inputText}
+            {props.inputText.map(prop => (
+                <Todo />
+            ))}
         </div>
     )
 }
