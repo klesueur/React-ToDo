@@ -22,8 +22,17 @@ const Form = (props) => {
 
     return(
         <div>
-            <input value={props.inputText} type="text" onChange={handleOnChange} />
-            <button type="submit" onClick={handleSubmit}>Add</button>
+            <input
+                value={props.inputText}
+                type="text"
+                onChange={handleOnChange}
+            />
+            <button
+                type="submit"
+                onClick={handleSubmit}
+            >
+                Add
+            </button>
         </div>
     )
 }
