@@ -2,7 +2,8 @@ import React from 'react';
 
 
 const Todo = (props) => {
-    
+    //Events
+    //const deleteHandler
 
     return (
         <div className="todo">

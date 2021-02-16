@@ -4,7 +4,6 @@ import React from 'react';
 const Form = (props) => {
 
         const handleOnChange = (e) => {
-            console.log(e.target.value);
             props.setInputText(e.target.value)
         }
 
@@ -25,8 +24,7 @@ const Form = (props) => {
             <input
                 value={props.inputText}
                 type="text"
-                onChange={handleOnChange}
-            />
+                onChange={handleOnChange} />
             <button
                 type="submit"
                 onClick={handleSubmit}

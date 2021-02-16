@@ -4,22 +4,22 @@ import Form from './Components/Form';
 import List from './Components/List';
 
 function App() {
-  const [input, setInput] = useState('');
-  const [list, setList] = useState([]);
+  const [inputText, setInputText] = useState('');
+  const [todos, setTodos] = useState([]);
 
   return (
     <div className="App">
       <h1>Kara's ToDo List</h1>
       <h2></h2>
       <Form
-        inputText={input}
-        setInputText={setInput}
-        todoList={list}
-        setTodoList={setList}
+        inputText={inputText}
+        setInputText={setInputText}
+        todoList={todos}
+        setTodoList={setTodos}
       />
       <List
-        inputText={input}
-        todoList={list}
+        inputText={inputText}
+        todoList={todos}
       />
     </div>
   );
