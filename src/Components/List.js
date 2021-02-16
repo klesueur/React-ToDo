@@ -11,7 +11,8 @@ const List = (props) => {
                 {props.todoList.map(todo => (
                     <Todo 
                         key={todo.id} 
-                        text={todo.text} 
+                        text={todo.text}
+                        setTodoList={props.setTodoList}
                     />
                 ))}
             </ul>
