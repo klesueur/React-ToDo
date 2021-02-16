@@ -2,6 +2,7 @@ import React from 'react';
 
 
 const Todo = (props) => {
+    console.log('what is this text', props.text)
     //Events
     const deleteHandler = () => {
         props.setTodos(props.todos.filter(e => e.id !== props.todo.id))
