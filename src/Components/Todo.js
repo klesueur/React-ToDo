@@ -1,13 +1,13 @@
 import React from 'react';
 
 
-const Todo = (text) => {
-    console.log('text prop in Todo', text)
+const Todo = (props) => {
+    
 
     return (
         <div className="todo">
             <li className="todo-item">
-                {text}
+                {props.text}
             </li>
             <button className="complete-btn">Check</button>
             <button className="trash-btn">Trash</button>

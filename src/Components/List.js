@@ -10,8 +10,8 @@ const List = (props) => {
             <ul>
                 {props.todoList.map(todo => (
                     <Todo 
-                        key={props.todoList.id} 
-                        text={props.todoList.text} 
+                        key={todo.id} 
+                        text={todo.text} 
                     />
                 ))}
             </ul>
