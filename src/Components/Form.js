@@ -25,10 +25,7 @@ const Form = (props) => {
                 value={props.inputText}
                 type="text"
                 onChange={handleOnChange} />
-            <button
-                type="submit"
-                onClick={handleSubmit}
-            >
+            <button type="submit" onClick={handleSubmit} >
                 Add
             </button>
         </div>
