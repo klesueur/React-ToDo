@@ -8,24 +8,24 @@ const Todo = (props) => {
         props.setTodos(props.todos.filter(e => e.id !== props.todo.id))
     }
 
-    const completeHandler = () => {
-        props.setTodos(props.todos.map(item => {
-            if (item.id === props.todo.id) {
-                return {
-                    ...item, completed: !item.completed
-                }
-                return item
-            }
+    // const completeHandler = () => {
+    //     props.setTodos(props.todos.map(item => {
+    //         if (item.id === props.todo.id) {
+    //             return {
+    //                 ...item, completed: !item.completed
+    //             }
+    //             return item
+    //         }
             
-        }))
-    }
+    //     }))
+    // }
 
     return (
         <div className="todo">
             <li className="todo-item">
                 {props.text}
             </li>
-            <button className="complete-btn" onClick={completeHandler}>
+            <button className="complete-btn" >
                 <i className="fas fa-check">Complete</i>
             </button>
             <button className="trash-btn" onClick={deleteHandler}>
