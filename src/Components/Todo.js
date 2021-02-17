@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoMdTrash, IoMdCheckmark } from 'react-icons/io';
 
 
 const Todo = (props) => {
@@ -26,10 +27,10 @@ const Todo = (props) => {
                 {props.text}
             </li>
             <button className="complete-btn" >
-                <i className="fas fa-check">Complete</i>
+                <IoMdCheckmark />
             </button>
             <button className="trash-btn" onClick={deleteHandler}>
-            <i className="fas fa-trash">Remove</i>
+                <IoMdTrash />
             </button>
         </div>
     )

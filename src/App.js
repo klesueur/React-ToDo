@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Kara's ToDo List</h1>
-      <h2></h2>
+      <h1>Kara's Practice Todo App</h1>
+      <h2>Powered by React</h2>
       <Form
         inputText={inputText}
         setInputText={setInputText}
