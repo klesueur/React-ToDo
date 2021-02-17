@@ -6,7 +6,7 @@
   font-family: 'Darker Grotesque', sans-serif;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to bottom right ,#ff0055, #ff8800, #ffd000);
+  background-image: linear-gradient(to bottom right ,#ff0055, #ff8800, yellow);
   padding: 15px;
   display: flex;
   flex-direction: column;
