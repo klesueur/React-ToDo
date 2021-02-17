@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoMdAdd } from 'react-icons/io';
 
 
 const Form = (props) => {
@@ -20,13 +21,16 @@ const Form = (props) => {
         }
 
     return(
-        <div>
+        <div className="form">
             <input
                 value={props.inputText}
                 type="text"
                 onChange={handleOnChange} />
-            <button type="submit" onClick={handleSubmit} >
-                Add
+            <button className="add-btn"
+                type="submit"
+                onClick={handleSubmit}
+            >
+                <IoMdAdd />
             </button>
         </div>
     )

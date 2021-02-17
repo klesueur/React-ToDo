@@ -9,16 +9,37 @@
   background-image: linear-gradient(to bottom right ,#ff0055, #ff8800, #ffd000);
   padding: 15px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
   font-weight: bold;
   font-size: 4em;
+  padding: 5px;
 }
 
 h2 {
   font-weight: bold;
   font-size: 1.5em;
+  padding: 5px;
+}
+
+.form {
+  padding: 20px;
+}
+
+input {
+  outline: none;
+  padding: 5px;
+  letter-spacing: .1em;
+  width: 225px;
+}
+
+.add-btn {
+  padding: 4.5px;
+  outline: none;
+  background-color: aqua;
 }
 
 
