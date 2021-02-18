@@ -6,7 +6,7 @@ const List = (props) => {
 
 
     return(
-        <div>
+        <div className='todolist-view'>
             <ul>
                 {props.todos.map(todo => (
                     <Todo 

@@ -6,11 +6,12 @@
   font-family: 'Darker Grotesque', sans-serif;
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to bottom right ,#ff0055, #ff8800, yellow);
+  background-image: linear-gradient(136deg, #ff006a, #ff8800, yellow);
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h2 {
   font-weight: bold;
   font-size: 1.5em;
   padding: 5px;
+  
 }
 
 .form {
@@ -31,15 +33,22 @@ h2 {
 
 input {
   outline: none;
-  padding: 5px;
+  padding: 6px;
   letter-spacing: .1em;
   width: 225px;
 }
 
-.add-btn {
-  padding: 4.5px;
-  outline: none;
-  background-color: #00f7ff;
+button {
+ cursor: pointer;
+ border: none;
+ padding: 7px;
+ outline: none;
+ background-color: #00f7ff;
+}
+
+.todo-view {
+  width: 500px;
+  padding: 10px;
 }
 
 

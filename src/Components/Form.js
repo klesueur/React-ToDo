@@ -21,18 +21,18 @@ const Form = (props) => {
         }
 
     return(
-        <div className="form">
+        <form className="form" onSubmit={handleSubmit}>
             <input
                 value={props.inputText}
                 type="text"
                 onChange={handleOnChange} />
             <button className="add-btn"
                 type="submit"
-                onClick={handleSubmit}
+                //onSubmit={handleSubmit}
             >
                 <IoMdAdd />
             </button>
-        </div>
+        </form>
     )
 }
 

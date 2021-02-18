@@ -22,14 +22,15 @@ const Todo = (props) => {
     // }
 
     return (
-        <div className="todo">
+        <div className="todo-view">
             <li className="todo-item">
                 {props.text}
             </li>
-            <button className="complete-btn" >
+            <button className="complete-btn" type="button">
                 <IoMdCheckmark />
             </button>
-            <button className="trash-btn" onClick={deleteHandler}>
+            <button className="trash-btn" type="button"
+                onClick={deleteHandler}>
                 <IoMdTrash />
             </button>
         </div>
