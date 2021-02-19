@@ -29,7 +29,7 @@ const Todo = (props) => {
 
     return (
         <div className="todo-view">
-            <li className="todo-item">
+            <li className={`todo-item ${props.todo.completed ? 'completed' : ''}`} >
                 {props.text}
             </li>
             <div className="btn-group">

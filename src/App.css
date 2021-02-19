@@ -71,6 +71,11 @@ button:hover {
   width: 400px;
 }
 
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
 .btn-group {
   display: flex;
   flex-direction: row;
