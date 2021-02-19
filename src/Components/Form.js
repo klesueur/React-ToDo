@@ -21,15 +21,14 @@ const Form = (props) => {
         }
 
     return(
+        // onSubmit within "form" - as an onClick with passed function,
+        // works with Enter key
         <form className="form" onSubmit={handleSubmit}>
             <input
                 value={props.inputText}
                 type="text"
                 onChange={handleOnChange} />
-            <button className="add-btn"
-                type="submit"
-                //onSubmit={handleSubmit}
-            >
+            <button className="add-btn" type="submit" >
                 <IoMdAdd />
             </button>
         </form>

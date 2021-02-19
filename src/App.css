@@ -29,13 +29,17 @@ h2 {
 
 .form {
   padding: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
 }
 
 input {
+  border: none;
   outline: none;
-  padding: 6px;
+  padding: 7.5px;
   letter-spacing: .1em;
-  width: 225px;
+  width: 240px;
 }
 
 button {
@@ -45,10 +49,29 @@ button {
  outline: none;
  background-color: #00f7ff;
 }
-
-.todo-view {
-  width: 500px;
-  padding: 10px;
+button:hover {
+  background-color: #89fbff;
 }
 
+.todo-view {
+  width: 460px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+	align-items: center;
+  margin-top: 10px;
+}
 
+.todo-item {
+  font-weight: 400;
+  font-size: 1.5em;
+  background: 0.4;
+  text-align: left;
+  width: 400px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+}
