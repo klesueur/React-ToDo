@@ -28,7 +28,7 @@ const Form = (props) => {
                 value={props.inputText}
                 type="text"
                 onChange={handleOnChange} />
-            <button className="add-btn" type="submit" >
+            <button className="add-btn" type="submit" disabled={props.inputText.length<1} >
                 <IoMdAdd />
             </button>
         </form>

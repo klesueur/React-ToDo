@@ -4,23 +4,11 @@ import { IoMdTrash, IoMdCheckmark } from 'react-icons/io';
 
 
 const Todo = (props) => {
-    console.log('what is this text', props.text)
+    
     //Events
     const deleteHandler = () => {
         props.setTodos(props.todos.filter(e => e.id !== props.todo.id))
     }
-
-    // const completeHandler = () => {
-    //     props.setTodos(props.todos.map(item => {
-    //         if (item.id === props.todo.id) {
-    //             return {
-    //                 ...item, completed: !item.completed
-    //             }
-    //             return item
-    //         }
-            
-    //     }))
-    // }
 
     const completeHandler = () => {
         props.setTodos(props.todos.map(item => item.id === props.todo.id ?

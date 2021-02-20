@@ -54,7 +54,7 @@ button:hover {
 }
 
 .todo-view {
-  width: 460px;
+  width: 500px;
   padding: 2px;
   display: flex;
   flex-direction: row;
