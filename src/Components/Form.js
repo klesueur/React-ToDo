@@ -27,7 +27,8 @@ const Form = (props) => {
             <input
                 value={props.inputText}
                 type="text"
-                onChange={handleOnChange} />
+                onChange={handleOnChange} 
+                placeholder="What's on your plate today?" />
             <button className="add-btn" type="submit" disabled={props.inputText.length<1} >
                 <IoMdAdd />
             </button>

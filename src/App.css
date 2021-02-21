@@ -24,7 +24,7 @@ h2 {
   font-weight: bold;
   font-size: 1.5em;
   padding: 5px;
-  
+  font-style: italic;
 }
 
 .form {
@@ -39,7 +39,7 @@ input {
   outline: none;
   padding: 7.5px;
   letter-spacing: .1em;
-  width: 240px;
+  width: 300px;
 }
 
 button {
@@ -47,11 +47,27 @@ button {
  border: none;
  padding: 7px;
  outline: none;
- background-color: #00f7ff;
+ 
 }
-button:hover {
+/* button:hover {
+  background-color: #89fbff;
+} */
+
+.complete-btn {
+  background-color: #00f7ff;
+}
+.complete-btn:hover {
   background-color: #89fbff;
 }
+
+.trash-btn {
+  background-color: rgb(238, 0, 238);
+}
+.trash-btn:hover {
+  background-color: rgb(233, 89, 233);
+}
+
+
 
 .todo-view {
   width: 500px;

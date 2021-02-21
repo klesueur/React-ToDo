@@ -1,4 +1,3 @@
-import { AspectRatioSharp } from '@material-ui/icons';
 import React from 'react';
 import { IoMdTrash, IoMdCheckmark } from 'react-icons/io';
 
