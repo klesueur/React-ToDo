@@ -6,7 +6,7 @@ const Form = (props) => {
 
         const handleOnChange = (e) => {
             props.setInputText(e.target.value)
-        }
+        };
 
         const handleSubmit = (e) => {
             e.preventDefault();
@@ -18,11 +18,11 @@ const Form = (props) => {
                     }
                 ]);
             props.setInputText('');
-        }
+        };
 
         const statusHandler = (e) => {
             props.setStatus(e.target.value)
-        }
+        };
 
     return(
         // onSubmit within "form" - as an onClick with passed function,
