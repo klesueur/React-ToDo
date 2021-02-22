@@ -20,6 +20,10 @@ const Form = (props) => {
             props.setInputText('');
         }
 
+        const statusHandler = (e) => {
+            props.setStatus(e.target.value)
+        }
+
     return(
         // onSubmit within "form" - as an onClick with passed function,
         // works with Enter key
@@ -32,6 +36,13 @@ const Form = (props) => {
             <button className="add-btn" type="submit" disabled={props.inputText.length<1} >
                 <IoMdAdd />
             </button>
+            <div className="select">
+                <select className="filter-todos" name="todos" onChange={statusHandler}>
+                    <option value="all"> All </option>
+                    <option value="completed"> Completed </option>
+                    <option value="uncompleted"> Uncompleted </option>
+                </select>
+            </div>
         </form>
     )
 }

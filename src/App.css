@@ -53,6 +53,12 @@ button {
   background-color: #89fbff;
 } */
 
+.add-btn {
+  /* background-color: rgb(255, 136, 38); */
+  /* background-color: #f5571e; */
+  background-color: #ff5f00;
+}
+
 .complete-btn {
   background-color: #00f7ff;
 }
@@ -66,8 +72,6 @@ button {
 .trash-btn:hover {
   background-color: rgb(233, 89, 233);
 }
-
-
 
 .todo-view {
   width: 500px;

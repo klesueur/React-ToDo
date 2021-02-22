@@ -4,8 +4,14 @@ import Form from './Components/Form';
 import List from './Components/List';
 
 function App() {
+  //State
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
+  const [status, setStatus] = useState('all');
+  const [filteredTodos, setFilteredTodos] = useState([]);
+
+  //Functions, Events
+  
 
   return (
     <div className="App">
@@ -18,6 +24,7 @@ function App() {
         setInputText={setInputText}
         todoList={todos}
         setTodoList={setTodos}
+        setStatus={setStatus}
       />
       <List
         inputText={inputText}
