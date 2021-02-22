@@ -8,7 +8,7 @@ const List = (props) => {
     return(
         <div className='todolist-view'>
             <ul className="todolist-ul">
-                {props.todos.map(todo => (
+                {props.filteredTodos.map(todo => (
                     <Todo 
                         key={todo.id} 
                         text={todo.text}

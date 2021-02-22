@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Form from './Components/Form';
 import List from './Components/List';
@@ -9,6 +9,11 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [status, setStatus] = useState('all');
   const [filteredTodos, setFilteredTodos] = useState([]);
+
+  //useEffects
+  useEffect(() => {
+    handleFilter()
+  },[todos, status])
 
   //Functions, Events
   //switch/case event for filter
@@ -38,11 +43,12 @@ function App() {
         todoList={todos}
         setTodoList={setTodos}
         setStatus={setStatus}
-      />
+        />
       <List
         inputText={inputText}
         todos={todos}
         setTodos={setTodos}
+        filteredTodos={filteredTodos}
       />
     </div>
   );
