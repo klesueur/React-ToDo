@@ -31,13 +31,14 @@ h2 {
   padding: 20px;
   margin-bottom: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center; 
 }
 
 input {
   border: none;
   outline: none;
-  padding: 7.5px;
+  padding: 12px;
   letter-spacing: .1em;
   width: 300px;
 }
@@ -47,7 +48,7 @@ button {
  border: none;
  padding: 7px;
  outline: none;
- 
+ color: white;
 }
 /* button:hover {
   background-color: #89fbff;
@@ -73,9 +74,22 @@ button {
   background-color: rgb(233, 89, 233);
 }
 
+/* .filter-select {
+  
+} */
+
+
+
+.filter-todos {
+  border: none;
+  outline: none;
+  padding: 7.5px;
+  letter-spacing: .1em;
+}
+
 .todo-view {
   width: 500px;
-  padding: 2px;
+  padding: 1.25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -88,7 +102,7 @@ button {
   font-size: 1.5em;
   background: 0.4;
   text-align: left;
-  width: 400px;
+  width: 385px;
 }
 
 .completed {

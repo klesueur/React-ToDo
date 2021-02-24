@@ -28,16 +28,20 @@ const Form = (props) => {
         // onSubmit within "form" - as an onClick with passed function,
         // works with Enter key
         <form className="form" onSubmit={handleSubmit}>
-            <input
-                value={props.inputText}
-                type="text"
-                onChange={handleOnChange} 
-                placeholder="What's on your plate today?" />
-            <button className="add-btn" type="submit" disabled={props.inputText.length<1} >
-                <IoMdAdd />
-            </button>
-            <div className="select">
-                <select className="filter-todos" name="todos" onChange={statusHandler}>
+            <div className="form-input">
+                <input
+                    className="form-input"
+                    value={props.inputText}
+                    type="text"
+                    onChange={handleOnChange} 
+                    placeholder="What's on your plate today?" />
+                <button className="add-btn" type="submit" disabled={props.inputText.length<1} >
+                    <IoMdAdd size={22} />
+                </button>
+            </div>
+            <div className="filter-select">
+                <select className="filter-todos" name="todos"
+                onChange={statusHandler}>
                     <option value="all"> All </option>
                     <option value="completed"> Completed </option>
                     <option value="uncompleted"> Uncompleted </option>

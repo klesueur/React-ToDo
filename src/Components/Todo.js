@@ -22,11 +22,11 @@ const Todo = (props) => {
             <div className="btn-group">
                 <button className="complete-btn" type="button"
                     onClick={completeHandler} >
-                    <IoMdCheckmark />
+                    <IoMdCheckmark size={20} />
                 </button>
                 <button className="trash-btn" type="button"
                     onClick={deleteHandler}>
-                    <IoMdTrash />
+                    <IoMdTrash size={20} />
                 </button>
             </div>
         </div>
