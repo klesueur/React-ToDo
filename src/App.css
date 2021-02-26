@@ -29,7 +29,7 @@ h2 {
 
 .form {
   padding: 20px;
-  margin-bottom: 15px;
+  margin: 15px 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -64,7 +64,7 @@ button {
   /* background-color: rgb(255, 136, 38); */
   /* background-color: #f5571e; */
   background-color: #ff5f00;
-  padding: 12px;
+  padding: 13px;
 }
 .add-btn:hover {
   background-color: rgb(255, 136, 38);
@@ -84,17 +84,36 @@ button {
   background-color: rgb(233, 89, 233);
 }
 
-.filter-input {
+/* .filter-input {
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
 }
+/* are either of these styling options working? */
+.select::after {
+  position: absolute;
+  background: #ff6f47;
+  cursor: pointer;
+}
+
 
 .filter-todos {
   border: none;
   outline: none;
-  padding: 16px;
+  padding: 18px;
   letter-spacing: .1em;
+  position: relative;
 }
 
 .todo-view {
