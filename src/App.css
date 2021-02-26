@@ -5,7 +5,7 @@
   text-align: center;
   font-family: 'Darker Grotesque', sans-serif;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   background-image: linear-gradient(136deg, #ff006a, #ff8800, yellow);
   padding: 15px;
   display: flex;
@@ -32,7 +32,8 @@ h2 {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
+  width: 55%;
 }
 
 input {
@@ -54,10 +55,19 @@ button {
   background-color: #89fbff;
 } */
 
+.form-input-group {
+  display: flex;
+  justify-content: center;
+}
+
 .add-btn {
   /* background-color: rgb(255, 136, 38); */
   /* background-color: #f5571e; */
   background-color: #ff5f00;
+  padding: 12px;
+}
+.add-btn:hover {
+  background-color: rgb(255, 136, 38);
 }
 
 .complete-btn {
@@ -74,16 +84,16 @@ button {
   background-color: rgb(233, 89, 233);
 }
 
-/* .filter-select {
-  
-} */
-
-
+.filter-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .filter-todos {
   border: none;
   outline: none;
-  padding: 7.5px;
+  padding: 16px;
   letter-spacing: .1em;
 }
 

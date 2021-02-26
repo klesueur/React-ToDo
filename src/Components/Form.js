@@ -28,7 +28,7 @@ const Form = (props) => {
         // onSubmit within "form" - as an onClick with passed function,
         // works with Enter key
         <form className="form" onSubmit={handleSubmit}>
-            <div className="form-input">
+            <div className="form-input-group">
                 <input
                     className="form-input"
                     value={props.inputText}
