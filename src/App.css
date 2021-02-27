@@ -50,6 +50,7 @@ button {
  padding: 7px;
  outline: none;
  color: white;
+ transition: background-color 0.3s ease,
 }
 /* button:hover {
   background-color: #89fbff;
@@ -99,6 +100,11 @@ select {
   box-shadow: none;
   border: 0 !important;
   background-image: none;
+  cursor: pointer;
+}
+/* display off for IE <= 11 below */
+select::-ms-expand {
+  display: none;
 }
 /* are either of these styling options working? */
 .select::after {
